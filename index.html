@@ -22,6 +22,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
 
+<link rel="stylesheet" href="css/bootstrap.min.css" >
+
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -35,8 +37,10 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
+
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
+    <div id="mast"></div>
+    <!-- Hello world!   You'll be deleting this line in the course -->
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -45,26 +49,37 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     display by looking at the id or at what's written between the <h2> tags.
     -->
     <div id="header" class="center-content clear-fix">
-      <ul id="topContacts" class="flex-box"></ul>
+      <div class="container">
+        <ul id="topContacts" class="flex-box"></ul>
+      </div>
     </div>
     <div style="clear: both;"></div>
     <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
+      <div class="container">
+        <h2>Work Experience</h2>
+      </div>
     </div>
     <div id="projects">
-      <h2>Projects</h2>
+      <div class="container">
+        <h2>Projects</h2>
+      </div>
     </div>
     <div id="education" class="gray">
-      <h2>Education</h2>
+      <div class="container">
+        <h2>Education</h2>
+      </div>
     </div>
     <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
+      <div class="container">
+        <h2>Where I've Lived and Worked</h2>
+      </div>
     </div>
     <div id="lets-connect" class="dark-gray">
       <h2 class="orange center-text">Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
-      </ul>
+        </ul>
     </div>
+
   </div>
 
   <!-- "HTML is loaded by the browser in the order it appears in the file. If the JavaScript is loaded first and it is supposed to affect the HTML below it, it might not work, as the JavaScript would be loaded before the HTML it is supposed to work on. Therefore, putting JavaScript near the bottom of the HTML page is often the best strategy."
@@ -86,6 +101,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   the DOM. jQuery is fast and easy to use, but it doesn't do anything
   you can't accomplish with vanilla (regular) JavaScript.
   -->
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/jQuery.js"></script>
 
   <!-- More on helper.js in the class -->
@@ -121,28 +137,34 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         an opening and closing set of slash asterisks for block comments.
     */
 
-
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
+      document.getElementById('topContacts').style.backgroundColor = "black";
     }
     if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
+      document.getElementById('header').style.backgroundColor = "black";
     }
     if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
+      document.getElementById('workExperience').style.backgroundColor = "black";
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
+      document.getElementById('projects').style.backgroundColor = "black";
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById('education').style.backgroundColor = "black";
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('lets-connect').style.display = 'none';
+      document.getElementById('lets-connect').style.backgroundColor = "black";
     }
     if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('mapDiv').style.backgroundColor = "black";
     }
   </script>
+  <script>
+      function initMap() {
+        // Styles a map in night mode.
+
+      }
+    </script>
+  <script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCnQz7FJyPuziI3F8vqbWbR06Ty5vjMo9A&callback=initMap"></script>
 </body>
 </html>

@@ -9,39 +9,73 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+  // padding: 0;
+  // margin: 0;
+  font-family: "Raleway", "Roboto" sans-serif;
+}
+
+body{
+  font-size:21px;
 }
 
 .clear-fix {
   overflow: auto;
 }
+#header{
+  padding: 50px 0;
+}
+
+#header img{
+  margin-right: 20px;
+}
+
+#workExperience,
+#projects,
+#education,
+#mapDiv{
+      padding: 75px 0px;
+}
+
+#main #mast{
+  padding: 20px;
+}
+
+#projects img{
+  display: inline-block;
+  width: 250px;
+}
 
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+  // padding: 0 5%;
 }
 
 h1 {
-  font-size: 40px;
+  // font-size: 40px;
+  font-size: 3rem;
   color: #f5a623;
   line-height: 48px;
   display: inline;
+  // padding:20px;
+  padding-right:15px;
 }
+
+#mast span{}
 
 h2 {
   font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
+  // font-size: 24px;
+  font-size:2.2rem;
+  color: #555;
+  // line-height: 29px;
+  // padding: 10px;
 }
 
 h3 {
   font-style: italic;
-  font-size: 20px;
+  // font-size: 20px;
+  font-size: 25px;
   color: #000;
   line-height: 22px;
 }
@@ -57,7 +91,7 @@ h2,
 h3,
 h4,
 h5 {
-  padding: 10px 5%;
+  // padding: 10px 5%;
 
 }
 
@@ -80,7 +114,7 @@ h5 {
 }
 
 p {
-  font-size: 14px;
+  // font-size: 14px;
   color: #333;
   line-height: 21px;
 }
@@ -90,6 +124,12 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+a.header-link{
+  font-size:1.8rem;
+  text-decoration: none;
+
 }
 
 .welcome-message {
@@ -119,7 +159,7 @@ a {
 
 .gray {
   background-color: #f3f3f3;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
   clear: both;
 }
 
@@ -138,18 +178,18 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  // padding: 10px;
 }
 
 .flex-column {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding: 10px;
+  // padding: 10px;
 }
 
 .center-content {
-  padding: 2.5% 5%;
+  // padding: 2.5% 5%;
 }
 
 ul {
@@ -158,21 +198,35 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
+  // padding: 10px;
   width: 200px;
   display: none;
 }
 
 img {
-  padding: 10px;
+  // padding: 10px;
 }
 
 span {
-  padding: 5px;
+  // padding: 5px;
 }
 
 #lets-connect {
   text-align: center;
+}
+
+#lets-connect .orange{
+  padding: 15px;
+}
+
+#footerContacts{
+  margin-bottom: 0;
+}
+
+.btn-block{
+  border-radius: 0;
+  padding: 1.5rem;
+  font-size: 24px;
 }
 
 /* Media queries to handle various device widths */
@@ -203,14 +257,16 @@ span {
 
 #map {
   display: block;
-  height: 100%;
-  margin: 0 5%;
+  // height: 100%;
+  height:400px;
+  margin: 5%;
 }
 
 #mapDiv {
-  height: 400px;
+  // height: 400px;
+  height: 100vh;
   width: 100%;
-  padding-bottom: 5%;
+  // padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {
@@ -219,3 +275,6 @@ span {
     display: block;
   }
 }
+
+// Personal Editing
+
